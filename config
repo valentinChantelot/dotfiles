@@ -1,0 +1,23 @@
+[global_config]
+  title_transmit_bg_color = "#99c1f1"
+  suppress_multiple_term_dialog = True
+[keybindings]
+[profiles]
+  [[default]]
+    background_color = "#002b36"
+    background_darkness = 0.79
+    cursor_color = "#aaaaaa"
+    font = FiraCode NFM Medium 12
+    foreground_color = "#dde4ec"
+    palette = "#372936:#f5615d:#51c672:#f3be73:#4da0f0:#8f86f2:#30c39c:#dde4ec:#6b7784:#fa7c75:#82df97:#fad199:#7cbcfc:#9d98f7:#64deb8:#f9fcff"
+    use_system_font = False
+    copy_on_selection = True
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]
