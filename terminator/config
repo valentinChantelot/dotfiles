@@ -16,6 +16,7 @@
   [[default]]
     [[[window0]]]
       type = Window
+      size = 1100, 600
       parent = ""
     [[[child1]]]
       type = Terminal
