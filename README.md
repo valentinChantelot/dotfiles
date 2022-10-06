@@ -1,6 +1,6 @@
 # Make it easy
 
-![alt text](https://github.com/valentinChantelot/dotfiles/img/master/victory.jpg?raw=true)
+![Victory baby meme image](./img/victory.jpg)
 
 > No more "P\*\*\*\*n mais comment j'avais fait ça déjà ?"
 
