@@ -51,6 +51,8 @@
 
 ### Fix QWERTY US-International keyboard to have cedilla
 
+> More infos here : https://github.com/raelgc/win_us_intl/
+
 -   `sudo sed -i /usr/share/X11/locale/en_US.UTF-8/Compose -e 's/ć/ç/g' -e 's/Ć/Ç/g'`
 -   `sudo nano /etc/environment`
 -   Copy `GTK_IM_MODULE=cedilla`
