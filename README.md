@@ -14,7 +14,7 @@
 -   `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 -   `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
 -   `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
--   `source .zshrc`
+-   `source ~/.zshrc`
 
 ### Install fonts
 
@@ -29,16 +29,16 @@
 
 ### Clone this repo and copy config files
 
--   `mkdir perso && cd $_`
+-   `mkdir ~/perso && cd $_`
 -   `git clone git@github.com:valentinChantelot/dotfiles.git`
--   `cp -r perso/dotfiles/.zshrc ~/`
--   `cp -r perso/dotfiles/terminator .config/`
+-   `cp -r ~/perso/dotfiles/.zshrc ~/`
+-   `cp -r ~/perso/dotfiles/terminator .config/`
 -   restart terminator if needed
 
 ### Install nvm
 
 -   `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
--   `source .zshrc`
+-   `source ~/.zshrc`
 
 ### Install yarn
 
@@ -48,3 +48,11 @@
 
 -   `echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf`
 -   `sudo sysctl -p`
+
+### Fix QWERTY US-International keyboard to have cedilla
+
+-   `sudo sed -i /usr/share/X11/locale/en_US.UTF-8/Compose -e 's/ć/ç/g' -e 's/Ć/Ç/g'`
+-   `sudo nano /etc/environment`
+-   Copy `GTK_IM_MODULE=cedilla`
+-   Copy `QT_IM_MODULE=cedilla`
+-   Save and reboot
